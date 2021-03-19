@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Learn how to use the Firebase platform on the Web">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1steRiver</title>
+
+  <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.2.10/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.10/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.10/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.2.10/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.2.10/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.2.10/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.2.10/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.2.10/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.2.10/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.2.10/firebase-performance.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+<!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Friendly Chat">
+  <meta name="theme-color" content="#303F9F">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="1steRiver">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+  <!-- Tile icon for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+  <meta name="msapplication-navbutton-color" content="#303F9F">
+
+    <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+   <!-- App Styling -->
+ <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"crossorigin="anonymous"/>
+ 
+
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">1steRiver</a>
+  <div id="myLinks">
+    <a href="#home"><i class="fa fa-fw fa-home"></i></a>
+    <a href="#contact"><i class="fa fa-fw fa-envelope"></i></a>
+    <a href="#services"><i class="fa fa-fw fa-wrench"></i></a>
+
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="https://eersteriver.firebaseapp.com" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+<div id="login_div"></div>
+      <label for="uname"><b>email</b></label>
+      <input type="text" placeholder="Enter Email" name="uname" required id="email_field">
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required id="password_field">
+        
+      <button type="submit">Login</button>
+      <div id="user_div" class="logged-div">
+        <h1>Welcome User</h1>
+        <p>Welcome to 1steRiver. You're currently logged in.</p>
+        <buton>Logout</buton>
+
+      </div>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+  </div>
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<body>
+
+<div class="icon-bar">
+  
+  <!--Search-->
+
+   <input type="text" placeholder="Search.."id="pac-input"
+      class="controls">
+   
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+   <div id="map"></div>
+<script
+      src="https://maps.google.com/maps?q=eersterivier&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      async
+    ></script>
+    <script type="text/javascript" src ="search.js"></script>
+   
+<!-- Google Map-->
+</div>
+<div class="mapouter">
+<div class="gmap_canvas">
+<iframe width="350" height="530" id="gmap_canvas" src="https://maps.google.com/maps?q=eersterivier&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+</iframe>
+<div class="navbar" id="myNavbar">
+  <a href="#news">All</a>
+  <a href="#news">Culture</a>
+  <a href="#contact">Food</a>
+  <a href="#about">Bars</a>
+  <a href="#about">Chat</a>
+</div>
+
+</div>
+</div>
+
+ <script type="text/javascript" src ="app.js"></script>
+ <script type="text/javascript" src ="main.js"></script>
+
+ <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+</script>
+
+</body>
+</html>
+    
+
+
+
+
