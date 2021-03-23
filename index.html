@@ -64,11 +64,17 @@
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
-  <a href="#home" class="active">1steRiver</a>
+  
+  <a href="#home" class="active">1steRivier</a>
+ 
   <div id="myLinks">
     <a href="#home"><i class="fa fa-fw fa-home"></i></a>
-    <a href="#contact"><i class="fa fa-fw fa-envelope"></i></a>
+  <a href="#" class="notification">
+  <span><i class="fa fa-fw fa-envelope"></i></span>
+  <span class="badge">3</span>
+</a>
     <a href="#services"><i class="fa fa-fw fa-wrench"></i></a>
+     
 
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
@@ -91,9 +97,8 @@
         
       <button type="submit">Login</button>
       <div id="user_div" class="logged-div">
-        <h1>Welcome User</h1>
-        <p>Welcome to 1steRiver. You're currently logged in.</p>
-        <buton>Logout</buton>
+       <class class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</class>
+   
 
       </div>
 
@@ -102,9 +107,9 @@
       </label>
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
+    <div class="container" style="background-color:#373434">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+     
     </div>
   </form>
 </div>
@@ -120,19 +125,10 @@
 <div class="icon-bar">
   
   <!--Search-->
-
    <input type="text" placeholder="Search.."id="pac-input"
       class="controls">
-   
-   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
-   <div id="map"></div>
-<script
-      src="https://maps.google.com/maps?q=eersterivier&t=&z=13&ie=UTF8&iwloc=&output=embed"
-      async
-    ></script>
-    <script type="text/javascript" src ="search.js"></script>
-   
+      
+  
 <!-- Google Map-->
 </div>
 <div class="mapouter">
@@ -140,7 +136,7 @@
 <iframe width="350" height="530" id="gmap_canvas" src="https://maps.google.com/maps?q=eersterivier&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 </iframe>
 <div class="navbar" id="myNavbar">
-  <a href="#news">All</a>
+  <a href="All.html">All</a>
   <a href="#news">Culture</a>
   <a href="#contact">Food</a>
   <a href="#about">Bars</a>
