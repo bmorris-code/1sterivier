@@ -43,7 +43,7 @@ body {
 }
 
 .active {
-	background-color: #53d2f8;
+	background-color: #3c484d;
 	color: white;
 }
 
@@ -51,7 +51,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Full-width input fields */
+/* Full-width input fields search button */
 input[type=text],
 input[type=password] {
 	width: 100%;
@@ -64,8 +64,8 @@ input[type=password] {
 
 /* Set a style for all buttons */
 button {
-	background-color: #69cdf2;
-	color: white;
+	background-color: #3c484d;
+color: white;
 	padding: 14px 20px;
 	margin: 8px 0;
 	border: none;
@@ -81,7 +81,8 @@ button:hover {
 .cancelbtn {
 	width: auto;
 	padding: 10px 18px;
-	background-color: #f44336;
+		background-color: #3c484d;
+
 }
 
 /* Center the image and position the close button */
@@ -150,7 +151,7 @@ span.psw {
 
 .close:hover,
 .close:focus {
-	color: red;
+	color: rgb(9, 9, 9);
 	cursor: pointer;
 }
 
@@ -231,4 +232,9 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.signup-section {
+	padding: 0.3rem 0rem;
+	
 }
