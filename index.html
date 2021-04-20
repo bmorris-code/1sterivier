@@ -33,7 +33,7 @@
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="Friendly Chat">
+  <meta name="application-name" content="1sterivier">
   <meta name="theme-color" content="#303F9F">
 
   <!-- Add to homescreen for Safari on iOS -->
@@ -53,6 +53,7 @@
    <!-- App Styling -->
  <link rel="stylesheet" href="style.css">
  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="chat.css">
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -69,15 +70,16 @@
 
 <!-- Simulate a smartphone / tablet -->
 <div class="mobile-container">
+  <div class="sunheader"></div>
+
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
  <!--Navbar -->
 <nav class="mb-1 navbar navbar-expand-lg navbar-dark secondary-color lighten-1">
-  <a class="navbar-brand" href="#">1RIVER</a>
- <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-      
+  <a class="navbar-brand" href="#">1RIVIER</a>
+
+  <a href="Login.html">
   <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle z-depth-0"
             alt="avatar image">
               </a>
@@ -90,24 +92,15 @@
       <li class="nav-item active">
           <span class="sr-only">(current)</span>
         </a>
-      
-       
     </ul>
     <ul class="navbar-nav ml-auto nav-flex-icons">
       <li class="nav-item">
-        <a class="nav-link waves-effect waves-light">1
+        <a class="nav-link waves-effect waves-light">3
           <i class="far fa-bell"></i>
+           <script type="text/javascript" src ="notification.js"></script>
         </a>
-      </li>
       
-        <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
-          aria-labelledby="navbarDropdownMenuLink-55">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
+      
   </div>
 </nav>
 <!--/.Navbar -->
@@ -128,8 +121,11 @@
   <a href="#" class="fas fa-utensils"></a>
   <a href="#" class="fas fa-coffee"></a>
   <a href="#" class="fas fa-business-time"></a>
-  <a href="#" class="far fa-comment-dots">
-  <span class="badge badge-danger">11</span></a>
+  <a href="chat.html" class="far fa-comment-dots">
+     
+  <span class="badge badge-danger">11</span>
+
+</a>
 </div>
 
 </div>
@@ -137,6 +133,8 @@
 
  <script type="text/javascript" src ="app.js"></script>
  <script type="text/javascript" src ="main.js"></script>
+  <script type="text/javascript" src ="chat.js"></script>
+
 
  <script>
       document.addEventListener('DOMContentLoaded', function() {
